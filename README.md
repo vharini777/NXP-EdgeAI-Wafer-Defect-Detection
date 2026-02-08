@@ -1,12 +1,11 @@
-# NXP-EdgeAI-Wafer-Defect-Detection
-# 🚀 Edge-AI Semiconductor Wafer Defect Classification
+# NXP Edge-AI Semiconductor Wafer Defect Classification
 ### **NXP IESA Hackathon 2026 | Phase 1 Submission**
 
 This project implements a high-speed, lightweight Deep Learning system for real-time defect detection in semiconductor wafer images. It is specifically optimized for deployment on **NXP i.MX RT** series hardware using the **eIQ® AI Development Environment**.
 
 ---
 
-## **📊 Performance Highlights (Projected)**
+## **Performance Highlights**
 | Metric | Result | Environment |
 | :--- | :--- | :--- |
 | **Inference Latency** | **3.55 ms** | TFLite (INT8 Emulated) |
@@ -16,11 +15,11 @@ This project implements a high-speed, lightweight Deep Learning system for real-
 
 ---
 
-## **🛠️ Technical Architecture**
-[cite_start]To meet the "Real-Time" and "Low-Power" requirements[cite: 39, 43], the system utilizes:
+## **Technical Architecture**
+To meet the "Real-Time" and "Low-Power" requirements, the system utilizes:
 * **Backbone:** MobileNetV3-Small for high feature-extraction efficiency.
 * **Custom Layer:** **Spatial Attention Module** to focus on microscopic defect structures.
-* [cite_start]**Optimization:** INT8 Post-Training Quantization (PTQ) to ensure compatibility with NXP NPU/eIQ[cite: 58].
+* **Optimization:** INT8 Post-Training Quantization (PTQ) to ensure compatibility with NXP NPU/eIQ.
 * **Loss Function:** Focal Loss + Label Smoothing to handle class imbalance.
 
 ---
@@ -28,25 +27,24 @@ This project implements a high-speed, lightweight Deep Learning system for real-
 ## **🔍 Model Explainability & Results**
 
 ### **Explainable AI (Grad-CAM)**
-[cite_start]We utilize Grad-CAM heatmaps to verify the model focuses on actual defect morphology (Bridges, Opens, Malformed Vias) rather than background noise[cite: 49, 63].
+We utilize Grad-CAM heatmaps to verify the model focuses on actual defect morphology (Bridges, Opens, Malformed Vias) rather than background noise.
 
-![Grad-CAM Results](results/image_a7f775.jpg)
+![Grad-CAM Results](results/img003.png)
 
 ### **Confusion Matrix**
-[cite_start]The model demonstrates high precision across all 8 required categories[cite: 49].
+The model demonstrates high precision across all 8 required categories.
 
-![Confusion Matrix](results/image_a7a540.png)
+![Confusion Matrix](results/image002.png)
 
 ### **Training Convergence**
 Stable convergence over 50 epochs, balancing accuracy with effective regularization.
 
-![Accuracy and Loss](results/image_a7a521.png)
+![Accuracy and Loss](results/image001.png)
 
 ---
 
-## **📁 Repository Structure**
+## **Repository Structure**
 ```text
-├── data/               # Dataset samples (Clean + 7 Defect types)
 ├── models/             # Final ONNX and TFLite (INT8) model files
 ├── notebook/           # Complete development and training code
 ├── results/            # Performance tables and visualization plots
