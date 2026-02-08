@@ -24,7 +24,7 @@ To meet the "Real-Time" and "Low-Power" requirements, the system utilizes:
 
 ---
 
-## **🔍 Model Explainability & Results**
+## ** Model Explainability & Results**
 
 ### **Explainable AI (Grad-CAM)**
 We utilize Grad-CAM heatmaps to verify the model focuses on actual defect morphology (Bridges, Opens, Malformed Vias) rather than background noise.
