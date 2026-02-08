@@ -1,0 +1,19 @@
+# --- Core Deep Learning Framework ---
+tensorflow==2.19.0
+keras==3.10.0
+tensorboard==2.19.0
+
+# --- Data Processing & Math ---
+numpy==2.0.2
+pandas==2.2.2
+scikit-learn==1.6.1
+
+# --- Computer Vision & Visualization ---
+opencv-python==4.13.0.90
+matplotlib==3.10.0
+seaborn==0.13.2
+pillow==11.3.0
+
+# --- Model Conversion & Edge Export ---
+tf2onnx==1.16.1
+onnx==1.15.0
