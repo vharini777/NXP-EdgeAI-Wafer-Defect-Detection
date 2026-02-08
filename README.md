@@ -34,12 +34,12 @@ We utilize Grad-CAM heatmaps to verify the model focuses on actual defect morpho
 ### **Confusion Matrix**
 The model demonstrates high precision across all 8 required categories.
 
-![Confusion Matrix](results/image002.png)
+![Confusion Matrix](results/img002.png)
 
 ### **Training Convergence**
 Stable convergence over 50 epochs, balancing accuracy with effective regularization.
 
-![Accuracy and Loss](results/image001.png)
+![Accuracy and Loss](results/img001.png)
 
 ---
 
